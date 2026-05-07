@@ -5,7 +5,7 @@ export default async function CatchAllRoutes({ params }) {
   return (
     <div>
       <h1>Catch All Routes</h1>
-      <p className="font-bold">{catchAllRoutes.join(" / ")}</p>
+      <p className="font-bold">custom page not found: {catchAllRoutes.join(" / ")}</p>
     </div>
   );
 }

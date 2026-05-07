@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import React from "react";
 
 export async function generateMetadata({
@@ -17,9 +18,14 @@ export default async function Blog({
 }: {
   params: Promise<{ blogId: string }>;
 }) {
-  console.log("blog param", params);
-
   const { blogId } = await params;
+
+  const isBlogIdValid = /^\d+$/.test(blogId);
+
+  if (!isBlogIdValid) {
+    notFound();
+  }
+
   return (
     <div>
       <h1>Blog Post</h1>
