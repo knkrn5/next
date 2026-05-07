@@ -13,6 +13,7 @@ export default async function Home() {
         <Link href="/blog/2">blog</Link>
         <Link href="/blog/test/comment">blog comment</Link>
         <Link href="/blog/test/comment/5">specific comment</Link>
+        <Link href="/auth/login">login</Link>
       </div>
     </>
   );
