@@ -22,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <header className="text-5xl font-bold">My Custom Header</header>
         {children}
       </body>
     </html>

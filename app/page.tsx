@@ -4,6 +4,7 @@ import Link from "next/link";
 export default async function Home() {
   return (
     <>
+
       <h1>Hello, Next.js!</h1>
 
       <div className="flex flex-col bg-amber-500">
@@ -16,6 +17,7 @@ export default async function Home() {
         <Link href="/auth/login">login</Link>
         <Link href="/resume">resume</Link>
       </div>
+
     </>
   );
 }
