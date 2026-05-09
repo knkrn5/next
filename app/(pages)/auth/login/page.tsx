@@ -10,7 +10,13 @@ export const metadata: Metadata = {
 export default function Login() {
   return (
     <div>
-      <h1>Login page</h1>
+      <h1
+        onClick={() => {
+          console.log("login page");
+        }}
+      >
+        Login page
+      </h1>
       <p>this is login page</p>
 
       <Link href="/auth/register">Go to Register Page</Link>
