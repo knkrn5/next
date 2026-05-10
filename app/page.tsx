@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import TestComp from "./_components/testComp";
+import Flow from "./_components/heroSection/Flow";
+import HeroSection from "./_components/heroSection/HeroSection";
+
+
 
 export default async function Home() {
   return (
     <>
       <h1>Hello, Next.js!</h1>
-      <TestComp />
+      <Flow />
       <div className="flex flex-col bg-amber-500">
         <Link href="/about">About Page</Link>
         <Link href="/services">Services Page</Link>
