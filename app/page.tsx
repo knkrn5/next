@@ -14,7 +14,7 @@ export default async function Home() {
         <Link href="/about">About Page</Link>
         <Link href="/services">Services Page</Link>
         <Link href="/services/web-dev">web dev</Link>
-        <Link href="/blog/2">blog</Link>
+        <Link href="/blog">blog</Link>
         <Link href="/blog/test/comment">blog comment</Link>
         <Link href="/blog/test/comment/5">specific comment</Link>
         <Link href="/auth/login">login</Link>

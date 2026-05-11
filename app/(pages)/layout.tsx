@@ -2,7 +2,7 @@ import React from "react";
 
 export default function pageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <header className="text-4xl">Pages Header</header>
       {children}
       <footer className="text-4xl">Pages Footer</footer>
