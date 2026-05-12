@@ -1,6 +1,4 @@
-// missing data Experience/Internship/Open-source contributions/freelance, Certifications, Achievements
-
-export const resumeData = {
+export const resume2Data = {
   personalInfo: {
     name: "KARAN",
     age: 24,
@@ -46,14 +44,14 @@ export const resumeData = {
     },
   ],
   technicalSkills: {
-    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java"],
-    Frontend: ["React", "HTML5", "CSS3", "Tailwind CSS"],
-    Backend: ["Node.js(Express)", "Python(Fastapi)", "REST APIs"],
+    "Programming Languages": ["JavaScript", "TypeScript"],
+    Frontend: ["HTML", "CSS", "Tailwind CSS", "React"],
+    Backend: ["Node.js(Express)", "REST APIs"],
     Database: ["SQLite", "PostgreSQL", "MongoDB", "Redis"],
     "Cloud & DevOps": [
       "AWS",
       "Azure",
-      "Render",
+      "SSH",
       "Docker",
       "Git",
       "CI/CD (GitHub Actions)",

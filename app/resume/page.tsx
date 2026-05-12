@@ -18,7 +18,6 @@ import {
     Handle,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
-import ResumeComp from '../_components/resumeComp';
 
 
 // Custom Node for Color Picker
@@ -62,7 +61,7 @@ const ZoomLevelNode = ({ data }: any) => (
 
 // Custom Node for Output
 const OutputNode = ({ data }: any) => (
-    <div className="border rounded shadow-md w-46 h-50 font-sans flex flex-col relative overflow-hidden bg-slate-50">
+    <div className="border rounded shadow-md w-46 h-fit font-sans flex flex-col relative overflow-hidden bg-slate-50">
         <Handle type="target" position={Position.Bottom} id="color" style={{ left: '20%' }} className="w-3 h-3 border-2 border-white" />
         <Handle type="target" position={Position.Bottom} id="shape" style={{ left: '50%' }} className="w-3 h-3 border-2 border-white" />
         <Handle type="target" position={Position.Bottom} id="zoom" style={{ left: '80%' }} className="w-3 h-3 border-2 border-white" />
@@ -70,63 +69,6 @@ const OutputNode = ({ data }: any) => (
         <div className="bg-gray-100/50 p-2 border-b text-xs font-semibold text-gray-500 flex justify-between z-10">
             <span>Resume Preview</span>
             <span className="text-gray-400 font-mono tracking-tighter">{(data.zoom || 50) * 2}%</span>
-        </div>
-
-        <div className="flex-1 p-4 relative overflow-hidden bg-white m-2 shadow-sm rounded border border-gray-100">
-            <div className="w-full h-full transform origin-top-left flex flex-col gap-3 transition-transform duration-75"
-                style={{
-                    transform: `scale(${data.zoom ? data.zoom / 50 : 1})`
-                }}>
-
-                {/* Resume Header */}
-                <div className="border-b-2 pb-2" style={{ borderColor: data.color || '#ff00dd' }}>
-                    <h2 className="text-xl font-bold tracking-tight" style={{ color: data.color || '#ff00dd' }}>Karan</h2>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-widest font-medium">
-                        {data.shape === 'pyramid' ? 'Senior Executive' : 'Creative Developer'}
-                    </p>
-                </div>
-
-                {/* Resume Content Blocks */}
-                <div className="flex flex-col gap-3">
-                    {/* Experience Box */}
-                    <div>
-                        <h3 className="text-[9px] font-bold text-gray-400 mb-1 tracking-wider">EXPERIENCE</h3>
-                        <div className="flex gap-2 mb-1 items-start">
-                            <div className="w-1.5 h-1.5 rounded-full mt-1.5" style={{ backgroundColor: data.color || '#ff00dd' }}></div>
-                            <div className="flex flex-col gap-1 w-full">
-                                <div className="h-1.5 w-1/3 bg-gray-200 rounded"></div>
-                                <div className="h-1.5 w-full bg-gray-100 rounded"></div>
-                                <div className="h-1.5 w-5/6 bg-gray-100 rounded"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Education Box */}
-                    <div>
-                        <h3 className="text-[9px] font-bold text-gray-400 mb-1 tracking-wider">EDUCATION</h3>
-                        <div className="flex gap-2 items-start">
-                            <div className="w-1.5 h-1.5 mb-1 opacity-50"
-                                style={{
-                                    backgroundColor: data.color || '#ff00dd',
-                                    borderRadius: data.shape === 'cube' ? '2px' : '50%'
-                                }}></div>
-                            <div className="h-1.5 w-1/2 bg-gray-200 rounded mt-1.5"></div>
-                        </div>
-                    </div>
-
-                    {/* Skills Box */}
-                    <div>
-                        <h3 className="text-[9px] font-bold text-gray-400 mb-1 tracking-wider">SKILLS</h3>
-                        <div className="flex gap-1 flex-wrap">
-                            <span className="h-3 w-10 opacity-20 rounded" style={{ backgroundColor: data.color || '#ff00dd' }}></span>
-                            <span className="h-3 w-16 opacity-20 rounded" style={{ backgroundColor: data.color || '#ff00dd' }}></span>
-                            <span className="h-3 w-8  opacity-20 rounded" style={{ backgroundColor: data.color || '#ff00dd' }}></span>
-                            <span className="h-3 w-12 opacity-20 rounded" style={{ backgroundColor: data.color || '#ff00dd' }}></span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 );

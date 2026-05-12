@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import { resumeData } from "./resumeData";
+import { resume1Data } from "./resume1Data";
 
 export default function Resume() {
 
@@ -15,79 +15,79 @@ export default function Resume() {
     <>
       <div className="max-w-4xl min-h-screen p-5 text-black font-serif bg-white mx-auto">
         <section className="text-center">
-          <h1 className="text-2xl font-bold">{resumeData.personalInfo.name}</h1>
+          <h1 className="text-2xl font-bold">{resume1Data.personalInfo.name}</h1>
           <p className="text-sm">
-            {resumeData.personalInfo.address.city},{" "}
-            {resumeData.personalInfo.address.country}
+            {resume1Data.personalInfo.address.city},{" "}
+            {resume1Data.personalInfo.address.country}
           </p>
           <div className="flex justify-center items-center text-xs space-x-1 underline underline-offset-2 max-sm:flex-col duration-300">
             {/* Phone */}
             <a
-              href={`tel:${resumeData.personalInfo.phone}`}
+              href={`tel:${resume1Data.personalInfo.phone}`}
               className="rounded hover:bg-neutral-200"
             >
               <FaPhone className="inline-block mr-1" />
-              {resumeData.personalInfo.phone}
+              {resume1Data.personalInfo.phone}
             </a>
             {/* Email */}
             <a
-              href={`mailto:${resumeData.personalInfo.email}`}
+              href={`mailto:${resume1Data.personalInfo.email}`}
               className=" rounded hover:bg-neutral-200 block"
             >
               <IoIosMail className="inline-block mr-1" />
-              {resumeData.personalInfo.email}
+              {resume1Data.personalInfo.email}
             </a>
             <a
-              href={`https://${resumeData.personalInfo.contact.linkedin}`}
+              href={`https://${resume1Data.personalInfo.contact.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded hover:bg-neutral-200 block"
             >
               <FaLinkedin className="inline-block mr-1" />
-              {resumeData.personalInfo.contact.linkedin}
+              {resume1Data.personalInfo.contact.linkedin}
             </a>
             <a
-              href={`https://${resumeData.personalInfo.contact.github}`}
+              href={`https://${resume1Data.personalInfo.contact.github}`}
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded hover:bg-neutral-200 block"
             >
               <FaGithub className="inline-block mr-1" />
-              {resumeData.personalInfo.contact.github}
+              {resume1Data.personalInfo.contact.github}
             </a>
             <a
-              href={`https://${resumeData.personalInfo.contact.website}`}
+              href={`https://${resume1Data.personalInfo.contact.website}`}
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded hover:bg-neutral-200 block"
             >
               <FaGlobe className="inline-block mr-1" />
-              {resumeData.personalInfo.contact.website}
+              {resume1Data.personalInfo.contact.website}
             </a>
           </div>
         </section>
         <section className="mt-1 text-sm">
           <h2 className="font-semibold">SUMMARY</h2>
           <hr />
-          <p>{resumeData.summary}</p>
+          <p>{resume1Data.summary}</p>
         </section>
         <section className="mt-1 text-sm">
           <h2 className="font-semibold">EDUCATION</h2>
           <hr />
           <div>
             <div className="flex justify-between">
-              <strong>{resumeData.education[0].school}</strong>{" "}
-              <p className="font-bold">{resumeData.education[0].duration}</p>
+              <strong>{resume1Data.education[0].school}</strong>{" "}
+              <p className="font-bold">{resume1Data.education[0].duration}</p>
             </div>
             <div className="flex justify-between">
               <span className="flex flex-col">
-                <p>{resumeData.education[0].degree}</p>
+                <p>{resume1Data.education[0].degree}</p>
                 <p className="font-serif">
-                  <i>{`CGPA- ${resumeData.education[0].cgpa}`}</i>
+                  <i>{`CGPA- ${resume1Data.education[0].cgpa}`}</i>
                 </p>
               </span>
               <p>
-                <i>{resumeData.education[0].location}</i>
+                <i>{resume1Data.education[0].location}</i>
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Resume() {
           <h2 className="font-semibold">TECHNICAL SKILLS</h2>
           <hr />
           <div>
-            {Object.entries(resumeData.technicalSkills).map(
+            {Object.entries(resume1Data.technicalSkills).map(
               ([category, skills]) => (
                 <div key={category}>
                   <strong>{category}:</strong> {skills.join(", ")}
@@ -109,7 +109,7 @@ export default function Resume() {
           <h2 className="text-sm font-semibold">PROJECTS</h2>
           <hr />
           <div>
-            {resumeData.projects.map((project, index) => (
+            {resume1Data.projects.map((project, index) => (
               <div key={index} className="mb-2">
                 <div className="flex justify-between">
                   <div className="flex items-center">
@@ -153,7 +153,7 @@ export default function Resume() {
           <h2 className="text-sm font-semibold">LANGUAGES</h2>
           <hr />
           <ul className="list-disc ml-5">
-            {resumeData.languages.map((language, index) => (
+            {resume1Data.languages.map((language, index) => (
               <li key={index}>
                 <strong>{language.name}</strong> - {language.proficiency}
               </li>
