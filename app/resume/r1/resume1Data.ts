@@ -63,7 +63,7 @@ export const resume1Data = {
   projects: [
     {
       name: "Finance Educational Web App",
-      liveLink: "https://wealthpsychology.karan.email/index.html",
+      liveLink: "https://wealthpsychology.aigalaxy.tech/index.html",
       githubLink: "https://github.com/knkrn5/WealthPsychology-app",
       duration: "May 2024",
       technologies: ["HTML5", "CSS", "JavaScript", "Node.js", "SQLite"],
@@ -104,7 +104,7 @@ export const resume1Data = {
       description: [
         "Architected a microservices-based portfolio with Node.js (contact/chatbot), Python (e-commerce), and Java (authentication).",
         "Designed MongoDB/PostgreSQL schemas for data storage and Redis for OTP verification, ensuring scalability.",
-        "Integrated Zustand, Nodemailer, and JWT/Bcrypt for state management, email notifications, and security.",
+        "Used Zustand, Nodemailer, and JWT/Bcrypt for state management, email, and authentication security.",
         "Impact: Reduced authentication latency and User Data retrieval time by 25% using Redis caching.",
       ],
     },
@@ -124,7 +124,6 @@ export const resume1Data = {
     "Traveling",
     "Gaming",
     "Learning",
-    "Open Source Contribution",
   ],
   availability: "Open to remote opportunities and relocation.",
 };
