@@ -15,11 +15,11 @@ export const resume2Data = {
       phone: "N/A",
       linkedin: "linkedin.com/in/knkrn5",
       github: "github.com/knkrn5",
-      website: "karan.email",
+      website: "ka-ran.me",
     },
   },
   summary:
-    "Full-stack web developer specializing in the MERN stack with experience delivering scalable, containerized, and cloud-deployed applications. Skilled in integrating AI-powered features, optimizing backend performance, and implementing microservices architecture. Committed to building accessible, user-friendly solutions.",
+    "Recent BCA graduate with hands-on experience building full-stack web applications using MERN stack, and modern DevOps practices. Strong focus on AI integration, containerization, and performant backend systems through multiple end-to-end projects.",
   experience: [
     {
       title: "Senior Full Stack Developer",
@@ -47,16 +47,9 @@ export const resume2Data = {
     "Programming Languages": ["JavaScript", "TypeScript"],
     Frontend: ["HTML", "CSS", "Tailwind CSS", "React"],
     Backend: ["Node.js(Express)", "REST APIs"],
-    Database: ["SQLite", "PostgreSQL", "MongoDB", "Redis"],
-    "Cloud & DevOps": [
-      "AWS",
-      "Azure",
-      "SSH",
-      "Docker",
-      "Git",
-      "CI/CD (GitHub Actions)",
-    ],
-    Tools: ["VS Code", "Postman", "Auth0", "Zustand", "Nodemailer"],
+    Database: ["MongoDB", "PostgreSQL", "Redis"],
+    "Cloud & DevOps": ["SSH", "Docker", "Git", "CI/CD (GitHub Actions)"],
+    Tools: ["VS Code", "Postman", "Redux", "Zustand", "Nodemailer"],
   },
   projects: [
     {
@@ -66,30 +59,30 @@ export const resume2Data = {
       duration: "July 2025",
       technologies: ["React/ts", "Tailwind CSS", "Node.js", "MongoDB"],
       description: [
-        "Built an AI-based debate platform where two AI agents discuss user-defined topics in real time",
-        "Implemented streaming AI responses using Server-Sent Events (SSE) with Markdown rendering support",
+        "Built an AI-based debate platform where two AI agents discuss user-defined topics in real time.",
+        "Implemented streaming AI responses using Server-Sent Events (SSE) with Markdown rendering support.",
         "Designed MongoDB schemas and Redis-based session management for scalable conversation handling.",
-        "Integrated Google OpenID authentication with JWT and Bcrypt-based security",
+        "Integrated Google OpenID authentication with JWT and Bcrypt-based security.",
         "Containerized the application with Docker and automated deployments via GitHub Actions CI/CD pipeline.",
       ],
     },
     {
       name: "TCP LAN Chat CLI",
-      liveLink: "https://wealthpsychology.aigalaxy.tech/index.html",
-      githubLink: "https://github.com/knkrn5/WealthPsychology-app",
+      npmLink: "https://github.com/knkrn5/kn-lan-chat",
+      githubLink: "https://www.npmjs.com/package/kn-lan-chat",
       duration: "Jan 2026",
       technologies: ["TypeScript", "Node.js(TCP/net)"],
       description: [
         "Developed a TCP-based multi-client LAN chat application with private messaging, broadcast messaging, and IP-based banning.",
-        "Built interactive server/client CLIs supporting persistent recipient mode and real-time client management",
+        "Built interactive server/client CLIs supporting persistent recipient mode and real-time client management.",
         "Implemented socket-based communication, connection lifecycle handling, and ban persistence using file storage.",
         "Published the package to npm with separate server and client executables.",
       ],
     },
     {
       name: "HTTP LAN File Share",
-      liveLink: "https://explanatorai.aigalaxy.tech/",
-      githubLink: "https://github.com/knkrn5/explanator-ai",
+      npmLink: "https://www.npmjs.com/package/kn-lan-share",
+      githubLink: "https://github.com/knkrn5/kn-lan-share/",
       duration: "March 2026",
       technologies: ["HTML", "CSS", "JavaScript", "Nodejs(http)"],
       description: [

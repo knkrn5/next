@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaExternalLinkAlt,
 } from "react-icons/fa";
+import { ImNpm } from "react-icons/im";
 import { resume2Data } from "./resume2Data";
 
 export default function Resume() {
@@ -116,12 +117,12 @@ export default function Resume() {
                     <strong className="hover:underline">
                       <a
                         title="Web Live link"
-                        href={project.liveLink}
+                        href={project.liveLink ? project.liveLink : project.npmLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center"
                       >
-                        {project.name} <FaExternalLinkAlt className="mx-1" /> |
+                        {project.name} {project.liveLink ? <FaExternalLinkAlt className="mx-1" /> : <ImNpm className="mx-1" />} |
                       </a>
                     </strong>
                     <a

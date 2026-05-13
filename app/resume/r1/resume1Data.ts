@@ -17,7 +17,7 @@ export const resume1Data = {
       phone: "N/A",
       linkedin: "linkedin.com/in/knkrn5",
       github: "github.com/knkrn5",
-      website: "karan.email",
+      website: "ka-ran.me",
     },
   },
   summary:
