@@ -41,19 +41,22 @@ export default function Login() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/", {
-      method: "GET",
-      credentials: "include",
-    })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        router.push("/account/profile");
-        return res.json();
-      })
-      .catch((err) => console.error("Fetch error:", err));
+    const checkAuth = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/", {
+          method: "GET",
+          credentials: "include",
+        });
 
+        if (!res.ok) return;
+
+        router.push("/account/profile");
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    checkAuth();
   }, []);
 
   return (
